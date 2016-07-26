@@ -16,6 +16,8 @@
 		E34AB1661D462DFE00222FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34AB1641D462DFE00222FC7 /* LaunchScreen.storyboard */; };
 		E34AB1711D462DFE00222FC7 /* iOSUtilityClassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34AB1701D462DFE00222FC7 /* iOSUtilityClassTests.m */; };
 		E34AB17C1D462DFE00222FC7 /* iOSUtilityClassUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E34AB17B1D462DFE00222FC7 /* iOSUtilityClassUITests.m */; };
+		E36C23DC1D47B6F30017531A /* ChangeFrameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E36C23DB1D47B6F30017531A /* ChangeFrameViewController.m */; };
+		E36C23DF1D47B8A50017531A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E36C23DE1D47B8A50017531A /* UIView+Frame.m */; };
 		E3E99EE11D473E96002036CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99EE01D473E96002036CB /* ViewController.m */; };
 		E3E99EE91D473F2F002036CB /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99EE81D473F2F002036CB /* ColorViewController.m */; };
 		E3E99EF01D474173002036CB /* UIColor+ChangeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99EEF1D474173002036CB /* UIColor+ChangeColor.m */; };
@@ -60,6 +62,10 @@
 		E34AB1771D462DFE00222FC7 /* iOSUtilityClassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUtilityClassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34AB17B1D462DFE00222FC7 /* iOSUtilityClassUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSUtilityClassUITests.m; sourceTree = "<group>"; };
 		E34AB17D1D462DFE00222FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E36C23DA1D47B6F30017531A /* ChangeFrameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeFrameViewController.h; sourceTree = "<group>"; };
+		E36C23DB1D47B6F30017531A /* ChangeFrameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeFrameViewController.m; sourceTree = "<group>"; };
+		E36C23DD1D47B8A50017531A /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E36C23DE1D47B8A50017531A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		E3E99EDF1D473E96002036CB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E3E99EE01D473E96002036CB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E3E99EE71D473F2F002036CB /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
@@ -190,6 +196,33 @@
 			path = iOSUtilityClassUITests;
 			sourceTree = "<group>";
 		};
+		E36C23D71D47B6720017531A /* ChangeFrameVC */ = {
+			isa = PBXGroup;
+			children = (
+				E36C23D81D47B6BB0017531A /* Categroy */,
+				E36C23D91D47B6BB0017531A /* ViewController */,
+			);
+			path = ChangeFrameVC;
+			sourceTree = "<group>";
+		};
+		E36C23D81D47B6BB0017531A /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				E36C23DD1D47B8A50017531A /* UIView+Frame.h */,
+				E36C23DE1D47B8A50017531A /* UIView+Frame.m */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
+		E36C23D91D47B6BB0017531A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E36C23DA1D47B6F30017531A /* ChangeFrameViewController.h */,
+				E36C23DB1D47B6F30017531A /* ChangeFrameViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		E3E99EDE1D473E96002036CB /* MainController */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +235,7 @@
 		E3E99EE21D473ED4002036CB /* ToolsController */ = {
 			isa = PBXGroup;
 			children = (
+				E36C23D71D47B6720017531A /* ChangeFrameVC */,
 				E30B36C41D479FB90051C879 /* JudgeDevice */,
 				E3E99EE61D473F1B002036CB /* ColorViewController */,
 				E3E99EF11D476103002036CB /* LoginOrRegisterInputVC */,
@@ -395,12 +429,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E36C23DF1D47B8A50017531A /* UIView+Frame.m in Sources */,
 				E3E99EE11D473E96002036CB /* ViewController.m in Sources */,
 				E3E99EF01D474173002036CB /* UIColor+ChangeColor.m in Sources */,
 				E3E99EFD1D4766B4002036CB /* InputTextField.m in Sources */,
 				E344AB3E1D47A87500F17EF0 /* JudgeDeviceController.m in Sources */,
 				E34AB15B1D462DFD00222FC7 /* AppDelegate.m in Sources */,
 				E3E99F011D476743002036CB /* LeftImageView.m in Sources */,
+				E36C23DC1D47B6F30017531A /* ChangeFrameViewController.m in Sources */,
 				E3E99EE91D473F2F002036CB /* ColorViewController.m in Sources */,
 				E344AB3B1D47A7B600F17EF0 /* JudgeDeviceManager.m in Sources */,
 				E34AB1581D462DFD00222FC7 /* main.m in Sources */,

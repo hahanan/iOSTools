@@ -11,6 +11,7 @@
 #import "ColorViewController.h" // 颜色色值的转换
 #import "InputViewController.h" // 注册登录输入框
 #import "JudgeDeviceController.h" // 判断设备的机型
+#import "ChangeFrameViewController.h" // 快速修改frame值
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -27,7 +28,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
     self.title = @"工具类";
     
-    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换",@"注册登录输入框",@"判断设备机型", nil];
+    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换",@"注册登录输入框",@"判断设备机型",@"改变frame值", nil];
     _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -76,6 +77,13 @@ static NSString *cellIdentifier = @"cellIdentifier";
             JudgeDeviceController *judgeDeviceVC = [[JudgeDeviceController alloc] init];
             judgeDeviceVC.title = _dataArr[indexPath.row];
             [self.navigationController pushViewController:judgeDeviceVC animated:YES];
+        }
+            break;
+        case 3:
+        {
+            ChangeFrameViewController *changeFrameVC = [[ChangeFrameViewController alloc] init];
+            changeFrameVC.title = _dataArr[indexPath.row];
+            [self.navigationController pushViewController:changeFrameVC animated:YES];
         }
             break;
         default:
