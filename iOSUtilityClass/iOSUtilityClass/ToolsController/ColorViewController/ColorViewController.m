@@ -7,10 +7,9 @@
 //
 
 #import "ColorViewController.h"
-#import "UIColor+ChangeColor.h"
+#import "Header.h"
 
-#define  Width [UIScreen mainScreen].bounds.size.width
-#define LabelWidth 200 
+#define LabelWidth 200
 #define LabelHeight 40
 #define LabelSpace  20
 #define LeftSpace   (Width - LabelWidth) / 2.0
@@ -19,7 +18,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.title = @"颜色的转换";
     self.view.backgroundColor = [UIColor whiteColor];
     [self prepareUI];
 }

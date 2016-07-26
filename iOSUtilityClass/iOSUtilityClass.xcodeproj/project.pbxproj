@@ -17,6 +17,9 @@
 		E3E99EE11D473E96002036CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99EE01D473E96002036CB /* ViewController.m */; };
 		E3E99EE91D473F2F002036CB /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99EE81D473F2F002036CB /* ColorViewController.m */; };
 		E3E99EF01D474173002036CB /* UIColor+ChangeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99EEF1D474173002036CB /* UIColor+ChangeColor.m */; };
+		E3E99EFD1D4766B4002036CB /* InputTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99EFC1D4766B4002036CB /* InputTextField.m */; };
+		E3E99F011D476743002036CB /* LeftImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99F001D476743002036CB /* LeftImageView.m */; };
+		E3E99F051D4770C8002036CB /* InputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E99F041D4770C8002036CB /* InputViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,13 @@
 		E3E99EE81D473F2F002036CB /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
 		E3E99EEE1D474173002036CB /* UIColor+ChangeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ChangeColor.h"; sourceTree = "<group>"; };
 		E3E99EEF1D474173002036CB /* UIColor+ChangeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ChangeColor.m"; sourceTree = "<group>"; };
+		E3E99EF91D47644E002036CB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		E3E99EFB1D4766B4002036CB /* InputTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextField.h; sourceTree = "<group>"; };
+		E3E99EFC1D4766B4002036CB /* InputTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTextField.m; sourceTree = "<group>"; };
+		E3E99EFF1D476743002036CB /* LeftImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftImageView.h; sourceTree = "<group>"; };
+		E3E99F001D476743002036CB /* LeftImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftImageView.m; sourceTree = "<group>"; };
+		E3E99F031D4770C8002036CB /* InputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputViewController.h; sourceTree = "<group>"; };
+		E3E99F041D4770C8002036CB /* InputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,7 @@
 		E34AB14A1D462DFD00222FC7 = {
 			isa = PBXGroup;
 			children = (
+				E3E99EF91D47644E002036CB /* Header.h */,
 				E34AB1551D462DFD00222FC7 /* iOSUtilityClass */,
 				E34AB16F1D462DFE00222FC7 /* iOSUtilityClassTests */,
 				E34AB17A1D462DFE00222FC7 /* iOSUtilityClassUITests */,
@@ -159,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E3E99EE61D473F1B002036CB /* ColorViewController */,
+				E3E99EF11D476103002036CB /* LoginOrRegisterInputVC */,
 			);
 			path = ToolsController;
 			sourceTree = "<group>";
@@ -180,6 +192,43 @@
 				E3E99EEF1D474173002036CB /* UIColor+ChangeColor.m */,
 			);
 			path = Categroy;
+			sourceTree = "<group>";
+		};
+		E3E99EF11D476103002036CB /* LoginOrRegisterInputVC */ = {
+			isa = PBXGroup;
+			children = (
+				E3E99F021D4770AE002036CB /* Controller */,
+				E3E99EFE1D4766C6002036CB /* View */,
+				E3E99EFA1D4766B4002036CB /* InputTextField */,
+			);
+			path = LoginOrRegisterInputVC;
+			sourceTree = "<group>";
+		};
+		E3E99EFA1D4766B4002036CB /* InputTextField */ = {
+			isa = PBXGroup;
+			children = (
+				E3E99EFB1D4766B4002036CB /* InputTextField.h */,
+				E3E99EFC1D4766B4002036CB /* InputTextField.m */,
+			);
+			path = InputTextField;
+			sourceTree = "<group>";
+		};
+		E3E99EFE1D4766C6002036CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3E99EFF1D476743002036CB /* LeftImageView.h */,
+				E3E99F001D476743002036CB /* LeftImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3E99F021D4770AE002036CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3E99F031D4770C8002036CB /* InputViewController.h */,
+				E3E99F041D4770C8002036CB /* InputViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +298,7 @@
 				TargetAttributes = {
 					E34AB1521D462DFD00222FC7 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = EGQU7KWF2V;
 					};
 					E34AB16B1D462DFE00222FC7 = {
 						CreatedOnToolsVersion = 7.3;
@@ -314,9 +364,12 @@
 			files = (
 				E3E99EE11D473E96002036CB /* ViewController.m in Sources */,
 				E3E99EF01D474173002036CB /* UIColor+ChangeColor.m in Sources */,
+				E3E99EFD1D4766B4002036CB /* InputTextField.m in Sources */,
 				E34AB15B1D462DFD00222FC7 /* AppDelegate.m in Sources */,
+				E3E99F011D476743002036CB /* LeftImageView.m in Sources */,
 				E3E99EE91D473F2F002036CB /* ColorViewController.m in Sources */,
 				E34AB1581D462DFD00222FC7 /* main.m in Sources */,
+				E3E99F051D4770C8002036CB /* InputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,9 +510,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSUtilityClass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CoderQi.iOSUtilityClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesdo.weave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -468,9 +523,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iOSUtilityClass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = CoderQi.iOSUtilityClass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lesdo.weave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "ColorViewController.h" // 颜色色值的转换
+#import "InputViewController.h" // 注册登录输入框
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,7 +26,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
     self.title = @"工具类";
     
-    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换", nil];
+    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换",@"注册登录输入框", nil];
     _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -56,12 +57,18 @@ static NSString *cellIdentifier = @"cellIdentifier";
         case 0:
         {
             ColorViewController *colorVC = [[ColorViewController alloc] init];
+            colorVC.title = _dataArr[indexPath.row];
             [self.navigationController pushViewController:colorVC animated:YES];
             
         }
             break;
         case 1:
-            
+        {
+        
+            InputViewController *inputVC = [[InputViewController alloc] init];
+            inputVC.title = _dataArr[indexPath.row];
+            [self.navigationController pushViewController:inputVC animated:YES];
+        }
             break;
         default:
             break;
