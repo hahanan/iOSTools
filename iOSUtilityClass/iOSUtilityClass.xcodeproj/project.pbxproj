@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E344AB3B1D47A7B600F17EF0 /* JudgeDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E344AB3A1D47A7B600F17EF0 /* JudgeDeviceManager.m */; };
+		E344AB3E1D47A87500F17EF0 /* JudgeDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E344AB3D1D47A87500F17EF0 /* JudgeDeviceController.m */; };
 		E34AB1581D462DFD00222FC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E34AB1571D462DFD00222FC7 /* main.m */; };
 		E34AB15B1D462DFD00222FC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E34AB15A1D462DFD00222FC7 /* AppDelegate.m */; };
 		E34AB1611D462DFE00222FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34AB15F1D462DFE00222FC7 /* Main.storyboard */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E344AB391D47A7B600F17EF0 /* JudgeDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JudgeDeviceManager.h; sourceTree = "<group>"; };
+		E344AB3A1D47A7B600F17EF0 /* JudgeDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JudgeDeviceManager.m; sourceTree = "<group>"; };
+		E344AB3C1D47A87500F17EF0 /* JudgeDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JudgeDeviceController.h; sourceTree = "<group>"; };
+		E344AB3D1D47A87500F17EF0 /* JudgeDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JudgeDeviceController.m; sourceTree = "<group>"; };
 		E34AB1531D462DFD00222FC7 /* iOSUtilityClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUtilityClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34AB1571D462DFD00222FC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E34AB1591D462DFD00222FC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +100,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30B36C41D479FB90051C879 /* JudgeDevice */ = {
+			isa = PBXGroup;
+			children = (
+				E30B36C51D479FE50051C879 /* Controller */,
+				E30B36C61D479FE50051C879 /* JudgeDeviceManager */,
+			);
+			path = JudgeDevice;
+			sourceTree = "<group>";
+		};
+		E30B36C51D479FE50051C879 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E344AB3C1D47A87500F17EF0 /* JudgeDeviceController.h */,
+				E344AB3D1D47A87500F17EF0 /* JudgeDeviceController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E30B36C61D479FE50051C879 /* JudgeDeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				E344AB391D47A7B600F17EF0 /* JudgeDeviceManager.h */,
+				E344AB3A1D47A7B600F17EF0 /* JudgeDeviceManager.m */,
+			);
+			path = JudgeDeviceManager;
+			sourceTree = "<group>";
+		};
 		E34AB14A1D462DFD00222FC7 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +202,7 @@
 		E3E99EE21D473ED4002036CB /* ToolsController */ = {
 			isa = PBXGroup;
 			children = (
+				E30B36C41D479FB90051C879 /* JudgeDevice */,
 				E3E99EE61D473F1B002036CB /* ColorViewController */,
 				E3E99EF11D476103002036CB /* LoginOrRegisterInputVC */,
 			);
@@ -298,7 +332,6 @@
 				TargetAttributes = {
 					E34AB1521D462DFD00222FC7 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = EGQU7KWF2V;
 					};
 					E34AB16B1D462DFE00222FC7 = {
 						CreatedOnToolsVersion = 7.3;
@@ -365,9 +398,11 @@
 				E3E99EE11D473E96002036CB /* ViewController.m in Sources */,
 				E3E99EF01D474173002036CB /* UIColor+ChangeColor.m in Sources */,
 				E3E99EFD1D4766B4002036CB /* InputTextField.m in Sources */,
+				E344AB3E1D47A87500F17EF0 /* JudgeDeviceController.m in Sources */,
 				E34AB15B1D462DFD00222FC7 /* AppDelegate.m in Sources */,
 				E3E99F011D476743002036CB /* LeftImageView.m in Sources */,
 				E3E99EE91D473F2F002036CB /* ColorViewController.m in Sources */,
+				E344AB3B1D47A7B600F17EF0 /* JudgeDeviceManager.m in Sources */,
 				E34AB1581D462DFD00222FC7 /* main.m in Sources */,
 				E3E99F051D4770C8002036CB /* InputViewController.m in Sources */,
 			);
@@ -514,7 +549,7 @@
 				INFOPLIST_FILE = iOSUtilityClass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lesdo.weave;
+				PRODUCT_BUNDLE_IDENTIFIER = CoderQi.iOSUtilityClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -527,7 +562,7 @@
 				INFOPLIST_FILE = iOSUtilityClass/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lesdo.weave;
+				PRODUCT_BUNDLE_IDENTIFIER = CoderQi.iOSUtilityClass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

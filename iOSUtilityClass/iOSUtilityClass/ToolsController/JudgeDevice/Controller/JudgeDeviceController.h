@@ -1,5 +1,5 @@
 //
-//  InputViewController.h
+//  JudgeDeviceController.h
 //  iOSUtilityClass
 //
 //  Created by Alara on 16/7/26.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InputViewController : UIViewController
+@interface JudgeDeviceController : UIViewController
 
 @end

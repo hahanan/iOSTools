@@ -10,6 +10,7 @@
 
 #import "ColorViewController.h" // 颜色色值的转换
 #import "InputViewController.h" // 注册登录输入框
+#import "JudgeDeviceController.h" // 判断设备的机型
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -26,7 +27,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
     self.title = @"工具类";
     
-    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换",@"注册登录输入框", nil];
+    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换",@"注册登录输入框",@"判断设备机型", nil];
     _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -68,6 +69,13 @@ static NSString *cellIdentifier = @"cellIdentifier";
             InputViewController *inputVC = [[InputViewController alloc] init];
             inputVC.title = _dataArr[indexPath.row];
             [self.navigationController pushViewController:inputVC animated:YES];
+        }
+            break;
+        case 2:
+        {
+            JudgeDeviceController *judgeDeviceVC = [[JudgeDeviceController alloc] init];
+            judgeDeviceVC.title = _dataArr[indexPath.row];
+            [self.navigationController pushViewController:judgeDeviceVC animated:YES];
         }
             break;
         default:
