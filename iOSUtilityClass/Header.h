@@ -10,6 +10,7 @@
 #define Header_h
 
 #import "UIColor+ChangeColor.h"
+#import "UIView+Frame.h"
 
 #pragma mark - 通用宏
 

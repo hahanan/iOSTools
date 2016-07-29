@@ -12,6 +12,8 @@
 #import "InputViewController.h" // 注册登录输入框
 #import "JudgeDeviceController.h" // 判断设备的机型
 #import "ChangeFrameViewController.h" // 快速修改frame值
+#import "SlideBannerViewController.h" // 可滑动的Banner
+#import "StretchingViewController.h"  // 拉伸图片
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,7 +30,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     
     self.title = @"工具类";
     
-    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换",@"注册登录输入框",@"判断设备机型",@"改变frame值", nil];
+    _dataArr = [NSMutableArray arrayWithObjects:@"颜色转换",@"注册登录输入框",@"判断设备机型",@"改变frame值",@"可左右滑动的广告位",@"轮播Banner",@"UIImage图片拉伸", nil];
     _tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -84,6 +86,26 @@ static NSString *cellIdentifier = @"cellIdentifier";
             ChangeFrameViewController *changeFrameVC = [[ChangeFrameViewController alloc] init];
             changeFrameVC.title = _dataArr[indexPath.row];
             [self.navigationController pushViewController:changeFrameVC animated:YES];
+        }
+            break;
+        case 4:
+        {
+            SlideBannerViewController *slideVC = [[SlideBannerViewController alloc] init];
+            slideVC.title = _dataArr[indexPath.row];
+            [self.navigationController pushViewController:slideVC animated:YES];
+        }
+            break;
+        case 5:
+        {
+            ChangeFrameViewController *changeFrameVC = [[ChangeFrameViewController alloc] init];
+            changeFrameVC.title = _dataArr[indexPath.row];
+            [self.navigationController pushViewController:changeFrameVC animated:YES];
+        }
+            break;
+        case 6: {
+            StretchingViewController *stretchVC = [[StretchingViewController alloc] init];
+            stretchVC.title = _dataArr[indexPath.row];
+            [self.navigationController pushViewController:stretchVC animated:YES];
         }
             break;
         default:
